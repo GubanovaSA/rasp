@@ -136,6 +136,31 @@ flowchart LR
         FL[Flask]
     end
 ```
+
+```mermaid
+flowchart LR
+
+    %% --- CLIENT SIDE ---
+    CLIENT((Клиентские инструменты\ncurl / telnet))
+    YAN((yandex.ru\nHEAD только заголовки))
+    NGINX((Nginx Proxy\nX-App-Version: 1.0))
+    FLASK((Flask API\n/posts CRUD))
+    LOGIC((Python Logic\nCRUD))
+    STORE((In-Memory Storage\nDict/List))
+
+    %% --- DEV TOOLS ---
+    DEV((Среда разработки\nPython / pip / venv / VS Code))
+
+    %% --- CONNECTIONS (CIRCLE) ---
+    CLIENT -->|HEAD запрос| YAN
+    CLIENT -->|HTTP запросы| NGINX
+    NGINX -->|/posts| FLASK
+    FLASK --> LOGIC
+    LOGIC --> STORE
+    STORE --> DEV
+    DEV --> CLIENT
+```
+---
 # 5. Ход выполнения работы
 
 ---
@@ -284,7 +309,7 @@ POST /api/posts HTTP/1.0 201
 Открытие конфигурации:
 
 ```bash
-sudo nano /etc/nginx/sites-available/default
+sudo nano /etc/nginx/nginx.conf
 ```
 
 Конфигурация:
