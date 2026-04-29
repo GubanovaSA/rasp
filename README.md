@@ -9,5 +9,5 @@
 * [*Организация асинхронного взаимодействия микросервисов с помощью брокера сообщений*](https://github.com/GubanovaSA/rasp/blob/main/3lab_rs.md)
 
 ## Лабораторная работа №3.2
-* [* Обнаружение отказов в распределенных системах (протокол Gossip)*](https://github.com/GubanovaSA/rasp/tree/main/3_2lab)
+* [ Обнаружение отказов в распределенных системах (протокол Gossip)*](https://github.com/GubanovaSA/rasp/tree/main/3_2lab)
 
