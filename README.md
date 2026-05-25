@@ -11,3 +11,5 @@
 ## Лабораторная работа №3.2
 * [ Обнаружение отказов в распределенных системах (протокол Gossip)*](https://github.com/GubanovaSA/rasp/tree/main/3_2lab)
 
+## Лабораторная работа №4
+* [ Реализация механизмов безопасности в распределенной системе*](https://github.com/GubanovaSA/rasp/blob/main/4lab_rs.md)
